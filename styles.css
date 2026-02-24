@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', serif; /* more elegant but safe */
 }
 
 body {
-    background-color: #111;
-    color: white;
+    background: linear-gradient(rgba(20,15,5,0.85), rgba(20,15,5,0.9)),
+                url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c");
+    background-size: cover;
+    background-position: center;
+    color: #f5e6c8; /* soft gold cream */
 }
 
 /* Navbar */
@@ -16,7 +19,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background-color: #1a1a1a;
+    background: rgba(30,20,5,0.9);
+    border-bottom: 1px solid #c6a75e;
 }
 
 .nav-links {
@@ -26,28 +30,40 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: #f5e6c8;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
 }
 
 .nav-buttons .book {
     margin-right: 15px;
-    color: white;
+    color: #d4af37;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .create-btn {
-    background-color: #00bcd4;
+    background: linear-gradient(45deg, #d4af37, #b8860b);
     padding: 8px 15px;
     border-radius: 5px;
     text-decoration: none;
-    color: white;
+    color: #1a1204;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.create-btn:hover {
+    box-shadow: 0 0 10px #d4af37;
 }
 
 /* Hero Background */
 .hero {
     height: 90vh;
-    background: url("https://via.placeholder.com/1920x1080") no-repeat center center/cover;
+    background: url("https://images.unsplash.com/photo-1546410531-bb4caa6b424d") no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,10 +73,12 @@ body {
 .registration-card {
     display: flex;
     width: 800px;
-    background: rgba(0, 188, 212, 0.25);
-    backdrop-filter: blur(10px);
+    background: rgba(40, 25, 10, 0.85);
+    backdrop-filter: blur(12px);
     border-radius: 15px;
     padding: 30px;
+    border: 1px solid #c6a75e;
+    box-shadow: 0 0 25px rgba(212,175,55,0.4);
 }
 
 /* Left Panel */
@@ -72,8 +90,9 @@ body {
 .profile-placeholder {
     width: 150px;
     height: 150px;
-    background-color: white;
-    color: black;
+    background: #2b1a05;
+    color: #d4af37;
+    border: 2px solid #d4af37;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -84,12 +103,17 @@ body {
 
 .upload-btn {
     margin-top: 10px;
-    background-color: #00bcd4;
+    background: linear-gradient(45deg, #d4af37, #b8860b);
     border: none;
     padding: 8px 12px;
-    color: white;
+    color: #1a1204;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.upload-btn:hover {
+    box-shadow: 0 0 10px #d4af37;
 }
 
 /* Right Panel */
@@ -100,11 +124,14 @@ body {
 
 .right-panel h1 {
     margin-bottom: 10px;
+    color: #d4af37;
+    letter-spacing: 2px;
 }
 
 .instructions {
     font-size: 14px;
     margin-bottom: 15px;
+    color: #e6d3a3;
 }
 
 form label {
@@ -118,7 +145,15 @@ form input {
     padding: 8px;
     margin-top: 5px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid #c6a75e;
+    background: #2b1a05;
+    color: #f5e6c8;
+}
+
+form input:focus {
+    outline: none;
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 8px #d4af37;
 }
 
 .row {
@@ -139,19 +174,26 @@ form input {
     width: 100%;
     margin-top: 15px;
     padding: 10px;
-    background-color: #00bcd4;
+    background: linear-gradient(45deg, #d4af37, #b8860b);
     border: none;
-    color: white;
+    color: #1a1204;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    box-shadow: 0 0 15px #d4af37;
 }
 
 .cancel-btn {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
-    background-color: #ccc;
-    border: none;
+    background-color: #5a4a2a;
+    border: 1px solid #c6a75e;
+    color: #f5e6c8;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -160,6 +202,8 @@ form input {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #1a1a1a;
+    background: rgba(30,20,5,0.9);
     font-size: 14px;
+    color: #d4af37;
+    border-top: 1px solid #c6a75e;
 }
