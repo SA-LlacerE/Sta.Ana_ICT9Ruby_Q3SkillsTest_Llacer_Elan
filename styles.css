@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Georgia', serif; /* more elegant but safe */
+    font-family: 'Georgia', serif;
 }
 
 body {
     background: linear-gradient(rgba(20,15,5,0.85), rgba(20,15,5,0.9)),
-                url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c");
+                url("dubai.jpg") no-repeat center center/cover;
     background-size: cover;
     background-position: center;
-    color: #f5e6c8; /* soft gold cream */
+    color: #f5e6c8;
 }
 
 /* Navbar */
@@ -60,15 +60,14 @@ body {
     box-shadow: 0 0 10px #d4af37;
 }
 
-/* Hero Background */
 .hero {
     height: 90vh;
-    background: url("https://images.unsplash.com/photo-1546410531-bb4caa6b424d") no-repeat center center/cover;
+    background: linear-gradient(rgba(20,15,5,0.6), rgba(20,15,5,0.7)),
+                url("dubai.jpg") no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 /* Registration Card */
 .registration-card {
     display: flex;
